@@ -15,15 +15,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        commitAsMessage()
-        badge()
+        self.view.backgroundColor = .blue
+        commitAsMessage()
 
         
     }
 
-    func badge(){
-        
-    }
 
     func commitAsMessage(){
          let url = "https://api.github.com/repos/NFuego/m/commits"

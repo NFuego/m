@@ -90,7 +90,7 @@ extension LoginVC {
 
 
         var b = NavBarBtn(frame: CGRect(x: 0, y: 0, width: 35, height: 35))
-        
+
         b.badgeCount = 1
         b.setTitle("Play", for: .normal)
         b.setTitleColor(.blue, for: .normal)
@@ -125,27 +125,35 @@ extension LoginVC {
         tfUser = UITextField()
         tfUser.adjustsFontSizeToFitWidth = true
         tfUser.borderStyle = .bezel
-        tfUser.placeholder = NSLocalizedString("string.account.placeholder", comment: "")
+//        tfUser.placeholder = NSLocalizedString("string.account.placeholder", comment: "")
+        tfUser.text = "ios-store@gmail.com"
+//        (id: 2) ios-customer@gmail.com
         self.view.addSubview(tfUser)
 
         tfPass = UITextField()
         tfPass.adjustsFontSizeToFitWidth = true
         tfPass.borderStyle = .bezel
         tfPass.isSecureTextEntry = true
-        tfPass.placeholder = NSLocalizedString("string.pass.placeholder", comment: "")
+//        tfPass.placeholder = NSLocalizedString("string.pass.placeholder", comment: "")
+        tfPass.text = "secret"
         self.view.addSubview(tfPass)
 
         btnLogin = UIButton()
 //        btnLogin.setBackgroundImage(UIImage(color: UIColor.zs_3in1Opt1()) , for: .normal)
 //        btnLogin.setBackgroundImage(UIImage(color: UIColor.zs_highlightedColor()), for: .highlighted)
-        btnLogin.setTitle(NSLocalizedString("string.login", comment: ""), for: UIControlState.normal)
-        btnLogin.setTitle(NSLocalizedString("string.login", comment: ""), for: UIControlState.highlighted)
-        btnLogin.setTitleColor(UIColor.white, for: UIControlState.normal)
+//        btnLogin.setTitle(NSLocalizedString("string.login", comment: ""), for: UIControlState.normal)
+//        btnLogin.setTitle(NSLocalizedString("string.login", comment: ""), for: UIControlState.highlighted)
+        
+        btnLogin.setTitle("登入", for: UIControlState.normal)
+        btnLogin.setTitle("登入", for: UIControlState.highlighted)
+
+        btnLogin.setTitleColor(UIColor.black, for: UIControlState.normal)
         self.view.addSubview(btnLogin)
 
         lbClaim = UILabel()
         lbClaim.adjustsFontSizeToFitWidth = true
-        lbClaim.text = NSLocalizedString("string.claim", comment: "")
+//        lbClaim.text = NSLocalizedString("string.claim", comment: "")
+        lbClaim.text = ""
         lbClaim.textAlignment = .center
         self.view.addSubview(lbClaim)
 
@@ -221,6 +229,13 @@ extension LoginVC {
     func bindBtnLogin(){
         btnLogin.rx.tap.subscribe(onNext: { [weak self] in
 //                print("here1 \(self?.tfUser.text)  \(self?.tfPass.text)")
+
+            self?.dismiss(animated: true, completion: {
+                
+            })
+            
+
+            return 
             if self?.tfUser.text != "" && self?.tfPass.text != "" {
 //                print("\(self?.tfUser.text) \(self?.tfPass.text)")
 //                self?.playLoadingView()
