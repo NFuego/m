@@ -1,7 +1,6 @@
 
 import UIKit
-import Alamofire
-import SwiftyJSON
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -11,20 +10,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        let url = "https://api.github.com/repos/NFuego/m/commits"
-        Alamofire.request(url).response { response in
-//            print("Request: \(response.request)")
-//            print("Response: \(response.response)")
-//            print("Error: \(response.error)")
-//            print(JSON(data:response.data!))
-//                let json = JSON(data:response.data!)
+       
 
-            if let data = response.data {
-                let json = JSON(data:data)
-                print(json.array?.first?.dictionary?["commit"]!["message"])
-            }
-
-        }
 
 
         return true
