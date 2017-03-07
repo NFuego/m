@@ -7,6 +7,14 @@ target 'testt' do
 #  pod 'Kanna'
   pod "SwiftyJSON"
   pod 'Alamofire'
+  pod 'Eureka', '~> 2.0.1'
+  pod 'SnapKit'
+  pod 'RxSwift'
+  pod 'RxCocoa'
+#  pod 'BadgeSwift', '~> 4.0'
+  pod 'Badgeable'
+
+
 
 # Pods for testt
 

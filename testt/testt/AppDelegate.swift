@@ -10,8 +10,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-       
 
+
+        let v = ViewController()
+        self.window?.rootViewController = v
+        self.window?.makeKeyAndVisible()
+
+        let l = LoginVC()
+        let l2 = UINavigationController(rootViewController: l)
+        UIApplication.shared.keyWindow?.rootViewController?.present(l2
+            , animated: true
+            , completion: { 
+                
+        })
 
 
         return true

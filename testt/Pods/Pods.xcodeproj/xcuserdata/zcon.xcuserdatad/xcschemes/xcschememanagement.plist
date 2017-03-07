@@ -9,7 +9,42 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>BadgeSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Badgeable-Badgeable.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Badgeable.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Eureka.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-testt.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RxCocoa.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RxSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SnapKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,7 +57,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>299CD80F6BD09BED817B1EFAE9191060</key>
+		<key>17104145C34A62DA52ED2EB51016DB19</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2BB3C7A0D901BA50C22490631DD34A01</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>675A114988AE198732ED4AD726408964</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>86A61603BC2D034CB4E851E595AD92B9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -32,7 +82,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DBC97302C654DD1AE33433DB9718E68D</key>
+		<key>96920A0590280C41AEC18690D353ECF0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D338594FD9D1A45C77FE488C38A67798</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DE5E571F5AB4B1FE704BDEDBA8480234</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E86750A3A4359906C3C1B1C9770B8B84</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FD9C15542D2E9B0794B30E50D1E5CF4F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -1,4 +1,3 @@
-//
 //  ViewController.swift
 //  testt
 //
@@ -16,6 +15,17 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+//        commitAsMessage()
+        badge()
+
+        
+    }
+
+    func badge(){
+        
+    }
+
+    func commitAsMessage(){
          let url = "https://api.github.com/repos/NFuego/m/commits"
         Alamofire.request(url).response { response in
 //            print("Request: \(response.request)")
@@ -39,8 +49,9 @@ class ViewController: UIViewController {
                 documentAttributes: nil)
             t.attributedText = attrStr
         }
-
     }
+
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
