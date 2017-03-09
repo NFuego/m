@@ -10,7 +10,9 @@ target 'testt' do
   pod 'Eureka', '~> 2.0.1'
   pod 'SnapKit'
   pod 'RxSwift'
+  pod 'SwiftyVIPER'
   pod 'RxCocoa'
+
 #  pod 'BadgeSwift', '~> 4.0'
   pod 'Badgeable'
 

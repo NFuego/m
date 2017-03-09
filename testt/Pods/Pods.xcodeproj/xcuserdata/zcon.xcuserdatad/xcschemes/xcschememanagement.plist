@@ -9,11 +9,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>BadgeSwift.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Badgeable-Badgeable.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -54,6 +49,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SwiftyVIPER.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -62,7 +62,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2BB3C7A0D901BA50C22490631DD34A01</key>
+		<key>26DBB8AB977548407F24DA600CA6533A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>363B653BB37C4A6579E5B7820C109012</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3BF8F334D774F516D7CD7DC0DE792406</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,37 +82,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>86A61603BC2D034CB4E851E595AD92B9</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>96920A0590280C41AEC18690D353ECF0</key>
+		<key>A740696A10849403680435E10DD03AB6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D338594FD9D1A45C77FE488C38A67798</key>
+		<key>AD05FDB999FFFFC76C3FC6B07F85403D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B862931E6038E8FEF637FD1D1F83BF72</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>DE5E571F5AB4B1FE704BDEDBA8480234</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E86750A3A4359906C3C1B1C9770B8B84</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FD9C15542D2E9B0794B30E50D1E5CF4F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

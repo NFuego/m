@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double BadgeSwiftVersionNumber;
-FOUNDATION_EXPORT const unsigned char BadgeSwiftVersionString[];
+FOUNDATION_EXPORT double SwiftyVIPERVersionNumber;
+FOUNDATION_EXPORT const unsigned char SwiftyVIPERVersionString[];
 

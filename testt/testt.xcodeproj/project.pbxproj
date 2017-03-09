@@ -17,6 +17,11 @@
 		E768BE421E6E48230032CDBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E768BE401E6E48230032CDBB /* Main.storyboard */; };
 		E768BE441E6E48230032CDBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E768BE431E6E48230032CDBB /* Assets.xcassets */; };
 		E768BE471E6E48230032CDBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E768BE451E6E48230032CDBB /* LaunchScreen.storyboard */; };
+		E7DC74F71E714EDC0017866F /* AppointmetFormerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DC74F21E714EDC0017866F /* AppointmetFormerInteractor.swift */; };
+		E7DC74F81E714EDC0017866F /* AppointmetFormerModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DC74F31E714EDC0017866F /* AppointmetFormerModule.swift */; };
+		E7DC74F91E714EDC0017866F /* AppointmetFormerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DC74F41E714EDC0017866F /* AppointmetFormerPresenter.swift */; };
+		E7DC74FA1E714EDC0017866F /* AppointmetFormerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DC74F51E714EDC0017866F /* AppointmetFormerRouter.swift */; };
+		E7DC74FB1E714EDC0017866F /* AppointmetFormerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DC74F61E714EDC0017866F /* AppointmetFormerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +38,11 @@
 		E768BE431E6E48230032CDBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E768BE461E6E48230032CDBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E768BE481E6E48230032CDBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7DC74F21E714EDC0017866F /* AppointmetFormerInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppointmetFormerInteractor.swift; path = Assets.xcassets/AppointmetFormerInteractor.swift; sourceTree = "<group>"; };
+		E7DC74F31E714EDC0017866F /* AppointmetFormerModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppointmetFormerModule.swift; path = Assets.xcassets/AppointmetFormerModule.swift; sourceTree = "<group>"; };
+		E7DC74F41E714EDC0017866F /* AppointmetFormerPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppointmetFormerPresenter.swift; path = Assets.xcassets/AppointmetFormerPresenter.swift; sourceTree = "<group>"; };
+		E7DC74F51E714EDC0017866F /* AppointmetFormerRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppointmetFormerRouter.swift; path = Assets.xcassets/AppointmetFormerRouter.swift; sourceTree = "<group>"; };
+		E7DC74F61E714EDC0017866F /* AppointmetFormerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppointmetFormerViewController.swift; path = Assets.xcassets/AppointmetFormerViewController.swift; sourceTree = "<group>"; };
 		FF5892539239284CA1BC8476 /* Pods-testt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testt/Pods-testt.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +106,11 @@
 				E7483A011E6E644B002C1A5D /* RightBadge.swift */,
 				E7483A031E6E8AD6002C1A5D /* LoginVC.swift */,
 				E7483A071E6EA835002C1A5D /* NaviBarBtn.swift */,
+				E7DC74F21E714EDC0017866F /* AppointmetFormerInteractor.swift */,
+				E7DC74F31E714EDC0017866F /* AppointmetFormerModule.swift */,
+				E7DC74F41E714EDC0017866F /* AppointmetFormerPresenter.swift */,
+				E7DC74F51E714EDC0017866F /* AppointmetFormerRouter.swift */,
+				E7DC74F61E714EDC0017866F /* AppointmetFormerViewController.swift */,
 			);
 			path = testt;
 			sourceTree = "<group>";
@@ -226,9 +241,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7483A081E6EA835002C1A5D /* NaviBarBtn.swift in Sources */,
+				E7DC74FA1E714EDC0017866F /* AppointmetFormerRouter.swift in Sources */,
+				E7DC74F81E714EDC0017866F /* AppointmetFormerModule.swift in Sources */,
 				E768BE3F1E6E48230032CDBB /* ViewController.swift in Sources */,
 				E7483A021E6E644B002C1A5D /* RightBadge.swift in Sources */,
 				E7483A041E6E8AD6002C1A5D /* LoginVC.swift in Sources */,
+				E7DC74F71E714EDC0017866F /* AppointmetFormerInteractor.swift in Sources */,
+				E7DC74F91E714EDC0017866F /* AppointmetFormerPresenter.swift in Sources */,
+				E7DC74FB1E714EDC0017866F /* AppointmetFormerViewController.swift in Sources */,
 				E768BE3D1E6E48230032CDBB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

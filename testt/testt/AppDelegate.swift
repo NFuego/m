@@ -1,30 +1,27 @@
 
 import UIKit
 
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
 
+//        let v = ViewController()
 
-        let v = ViewController()
+        let v = AppointmetFormerModule().view
+        
         self.window?.rootViewController = v
         self.window?.makeKeyAndVisible()
 
-        let l = LoginVC()
-        let l2 = UINavigationController(rootViewController: l)
-        UIApplication.shared.keyWindow?.rootViewController?.present(l2
-            , animated: true
-            , completion: { 
-                
-        })
-
-
+//        let l = LoginVC()
+//        let l2 = UINavigationController(rootViewController: l)
+//        UIApplication.shared.keyWindow?.rootViewController?.present(l2
+//            , animated: true
+//            , completion: { 
+//                
+//        })
         return true
     }
 
@@ -49,7 +46,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
 }
 
