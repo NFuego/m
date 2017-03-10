@@ -12,7 +12,7 @@ target 'testt' do
   pod 'RxSwift'
   pod 'SwiftyVIPER'
   pod 'RxCocoa'
-
+  pod 'Kingfisher'
 #  pod 'BadgeSwift', '~> 4.0'
   pod 'Badgeable'
 
