@@ -1,11 +1,26 @@
 // MARK: Imports
-
 import UIKit
 
 import Eureka
 import SwiftyVIPER
 import Kingfisher
 import SnapKit
+
+
+let kNAME = "name"
+let kCLASS = "class"
+let kWEIGHT = "weight"
+let kAGE = "age"
+
+let kDESCRIPTION = "description"
+let kOWNER_NAME = "ownername"
+let kEMAIL = "email"
+let kPHONE = "phone"
+let kADDRESS = "address"
+let kSTART_TIME = "start_time"
+let kEND_TIME = "end_time"
+let kCONFIRM = "confirm"
+
 
 // MARK: Protocols
 
@@ -61,6 +76,7 @@ extension AppointmetFormerViewController: AppointmetFormerPresenterViewProtocol 
 extension AppointmetFormerViewController {
     func setupForm(){
         let header = "Appoint"
+        let header2 = "ooooooooooooooo"
 
         /*
          loaded :
@@ -72,60 +88,68 @@ extension AppointmetFormerViewController {
          weight
          age
 
-         
+
          descript:
          owner name
          email
          phone
          address
+         
+
+         "id": 419,
+         "start_at": "2017-01-11 14:00:00",
+         "end_at": "2017-01-11 14:30:00",
+         "status": "pending",
+         "description": "regegg",
+         "customer_thumbnail": "/stapler/App/Models/User/CustomerDetail/avatars/000/000/001/thumb/eason.jpg",
+         "pet_id": 1,
+         "pet_name": "Floyd",
+         "pet_thumbnail": "/stapler/App/Models/Pet/Pet/pet_avatars/000/000/001/thumb/1.png"
  */
 //         icon
-//         name
-//         class
-//         weight
-//         age
-//
-//
-//         descript:
-//         owner name
-//         email 
-//         phone
-//         address
-
-            form  +++ Section(header: header, footer: "")          //bleConnMsg)
+        
+        let imgUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVKqyeR1MompJT0wpeE_24HEIF-DlXAkyz69a_qTYxhxf_GVXneA"
+            form +++ Section(header: header, footer: "")          //bleConnMsg)
+                // ========================================================================== loaded zone
                 <<< ImgRow() { (i:ImgRow) -> Void in
-                    i.value = Picture(url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVKqyeR1MompJT0wpeE_24HEIF-DlXAkyz69a_qTYxhxf_GVXneA")
-                    
+                    i.value = Picture(url: imgUrl)
                 }
                 <<< LabelRow() { (l:LabelRow) -> Void in
-                    l.title = "hihi"
-                    
-                } .onCellSelection({ (cell, label) in
-                    
-                })
-                <<< NameRow() { (row:NameRow) -> Void in
-                    row.title = "petname" //NSLocalizedString("blevc-scan", comment: "")
-                    row.cell.tintColor = .green
-                    row.cell.textLabel?.text =  "fwfjwoiejfoiwe"
+                    l.tag = kNAME
+                    l.title = NSLocalizedString(kNAME, comment: "")
+                }
+                <<< LabelRow() { (l:LabelRow) -> Void in
+                    l.tag = kSTART_TIME
+                    l.title = NSLocalizedString(kSTART_TIME, comment: "")
+                }
+                <<< LabelRow() { (l:LabelRow) -> Void in
+                    l.tag = kEND_TIME
+                    l.title = NSLocalizedString(kEND_TIME, comment: "")
+                }
+                +++ Section(header: header2, footer: "")          //bleConnMsg)
+                <<< LabelRow() { (l:LabelRow) -> Void in
+                    l.tag = kDESCRIPTION
+                    l.title = NSLocalizedString(kNAME, comment: "")
+                }
+                <<< ButtonRow() { (b:ButtonRow) -> Void in
+                    b.tag = kCONFIRM
+                    b.title = NSLocalizedString(kCLASS, comment: "")
                 } .onCellSelection({ (cell, row) in
-                    // here to scan
-                    print(cell)
-    //                self.bluetoothManager.stopScan()
-    //                self.bluetoothManager.startScan()
-                }) <<< TextRow() { (row2:TextRow) -> Void in
-                    row2.title = "text" //NSLocalizedString("blevc-scan", comment: "")
-                    row2.cell.tintColor = .green
-                    row2.cell.textField.isEnabled = false
-                    row2.cell.textField.text = "fwfjoweijfowijfojweio"
-//                    row2.disabled = true
-                    
-                    } .onCellSelection( { (cell, row) in
-                    print("text selection")
-                        }
-                        
-                    ).onChange({ (row:TextRow) in
+                    self.dismiss(animated: true, completion: {
+
+                    })
                 })
-//                +++ bleListSec
+        
+        
+            form.setValues([kNAME: "smita",
+                            kCLASS: "niuniu"])
+        
+//                <<< TextRow() { (row2:TextRow) -> Void in
+//                    row2.title = "text" //NSLocalizedString("blevc-scan", comment: "")
+//                    row2.cell.tintColor = .green
+//                    row2.cell.textField.isEnabled = false
+//                    row2.cell.textField.text = "fwfjoweijfowijfojweio"
+////                    row2.disabled = true
     } // fin setupForm
 }
 
@@ -139,10 +163,7 @@ func ==(lhs: Picture, rhs: Picture) -> Bool {
     return lhs.url == rhs.url
 }
 
-
-
 final class ImgCell : Cell<Picture>,CellType {
-
     let img:UIImageView = UIImageView()
     let imgSize = 100
     let processor = RoundCornerImageProcessor(cornerRadius: 50)
@@ -175,7 +196,6 @@ final class ImgCell : Cell<Picture>,CellType {
         selectionStyle = .none
         height = { return 120 }
     }
-
 
     override func update() {
         guard let pic = row.value else { return }
