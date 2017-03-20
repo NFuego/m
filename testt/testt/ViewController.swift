@@ -48,7 +48,6 @@ class ViewController: UIViewController {
             self.view.addSubview(t)
             let attrStr = try! NSAttributedString(
                 data: msg.data(using: String.Encoding.unicode, allowLossyConversion: true)!,
-                
                 options: [ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType],
                 documentAttributes: nil)
             t.attributedText = attrStr
