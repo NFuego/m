@@ -16,6 +16,9 @@ target 'testt' do
 #  pod 'BadgeSwift', '~> 4.0'
   pod 'Badgeable'
 
+  pod 'SnapKit'
+  pod 'DeviceKit', '~> 1.0'
+
 
 
 # Pods for testt

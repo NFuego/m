@@ -1,6 +1,7 @@
 PODS:
   - Alamofire (4.3.0)
   - Badgeable (0.1.2)
+  - DeviceKit (1.0.1)
   - Eureka (2.0.1)
   - Kingfisher (3.5.2)
   - RxCocoa (3.1.0):
@@ -13,6 +14,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - Badgeable
+  - DeviceKit (~> 1.0)
   - Eureka (~> 2.0.1)
   - Kingfisher
   - RxCocoa
@@ -24,6 +26,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
   Badgeable: 6fc08430263f73f2bb40df3bdefa4eb1773e9ba7
+  DeviceKit: 461e525867e48e725f41699c1cab3100df1258ff
   Eureka: ae837bb1dfae0c07bc1bda7aeef87876eeb537c2
   Kingfisher: 9950e382c500b6834ce004c7c4131c444e90c3a1
   RxCocoa: 50d7564866da9299161e86a263ce12a0873904d8
@@ -32,6 +35,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   SwiftyVIPER: 83afd74104ea27303ec6a52563f4adbf33413e50
 
-PODFILE CHECKSUM: 038a4411e596bafa31a6082ef6eec3be3ca57076
+PODFILE CHECKSUM: cd027ab2109f17a4281d06010ead27f48c59e5c8
 
 COCOAPODS: 1.2.0
