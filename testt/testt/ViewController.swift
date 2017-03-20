@@ -27,6 +27,7 @@ class ViewController: UIViewController {
         }
     }
 
+
     func commitAsMessage(){
          let url = "https://api.github.com/repos/NFuego/m/commits"
         Alamofire.request(url).response { response in
@@ -47,22 +48,23 @@ class ViewController: UIViewController {
             self.view.addSubview(t)
             let attrStr = try! NSAttributedString(
                 data: msg.data(using: String.Encoding.unicode, allowLossyConversion: true)!,
+                
                 options: [ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType],
                 documentAttributes: nil)
             t.attributedText = attrStr
             t.snp.makeConstraints({ (make) in
                 make.centerX.equalToSuperview()
-                make.top.equalToSuperview().offset(10)
+                make.top.equalToSuperview().offset(75)
                 make.width.equalToSuperview()
                 make.height.equalTo(70)
             })
+//            let str = "<p style=\"color:#FFFFFF;font-size:38px\">Thanks your donwload.</p>"
         }
     }
-    
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 }
-
