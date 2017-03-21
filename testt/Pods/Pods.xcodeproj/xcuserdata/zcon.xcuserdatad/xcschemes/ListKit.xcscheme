@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'FC300DCDCF15B6F7964704A1A62FEDED'
-               BlueprintName = 'SwiftyVIPER'
+               BlueprintIdentifier = '9D7772682F4283B30D74F96630AAAE94'
+               BlueprintName = 'ListKit'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'SwiftyVIPER.framework'>
+               BuildableName = 'ListKit.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

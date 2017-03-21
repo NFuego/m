@@ -12,6 +12,7 @@
 		E7483A041E6E8AD6002C1A5D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7483A031E6E8AD6002C1A5D /* LoginVC.swift */; };
 		E7483A061E6EA341002C1A5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7483A051E6EA341002C1A5D /* Assets.xcassets */; };
 		E7483A081E6EA835002C1A5D /* NaviBarBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7483A071E6EA835002C1A5D /* NaviBarBtn.swift */; };
+		E7522F0A1E80D30E00528616 /* CategoryOrigamiList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7522F091E80D30E00528616 /* CategoryOrigamiList.swift */; };
 		E768BE3D1E6E48230032CDBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E768BE3C1E6E48230032CDBB /* AppDelegate.swift */; };
 		E768BE3F1E6E48230032CDBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E768BE3E1E6E48230032CDBB /* ViewController.swift */; };
 		E768BE421E6E48230032CDBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E768BE401E6E48230032CDBB /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 		E7483A031E6E8AD6002C1A5D /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		E7483A051E6EA341002C1A5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7483A071E6EA835002C1A5D /* NaviBarBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaviBarBtn.swift; sourceTree = "<group>"; };
+		E7522F091E80D30E00528616 /* CategoryOrigamiList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryOrigamiList.swift; sourceTree = "<group>"; };
 		E768BE391E6E48230032CDBB /* testt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E768BE3C1E6E48230032CDBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E768BE3E1E6E48230032CDBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +77,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E7522F081E80D2E700528616 /* newListUI */ = {
+			isa = PBXGroup;
+			children = (
+				E7522F091E80D30E00528616 /* CategoryOrigamiList.swift */,
+			);
+			name = newListUI;
+			sourceTree = "<group>";
+		};
 		E768BE301E6E48230032CDBB = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +106,7 @@
 		E768BE3B1E6E48230032CDBB /* testt */ = {
 			isa = PBXGroup;
 			children = (
+				E7522F081E80D2E700528616 /* newListUI */,
 				E7483A051E6EA341002C1A5D /* Assets.xcassets */,
 				E768BE3C1E6E48230032CDBB /* AppDelegate.swift */,
 				E768BE3E1E6E48230032CDBB /* ViewController.swift */,
@@ -246,6 +257,7 @@
 				E768BE3F1E6E48230032CDBB /* ViewController.swift in Sources */,
 				E7483A021E6E644B002C1A5D /* RightBadge.swift in Sources */,
 				E7483A041E6E8AD6002C1A5D /* LoginVC.swift in Sources */,
+				E7522F0A1E80D30E00528616 /* CategoryOrigamiList.swift in Sources */,
 				E7DC74F71E714EDC0017866F /* AppointmetFormerInteractor.swift in Sources */,
 				E7DC74F91E714EDC0017866F /* AppointmetFormerPresenter.swift in Sources */,
 				E7DC74FB1E714EDC0017866F /* AppointmetFormerViewController.swift in Sources */,

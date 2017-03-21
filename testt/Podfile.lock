@@ -4,6 +4,7 @@ PODS:
   - DeviceKit (1.0.1)
   - Eureka (2.0.1)
   - Kingfisher (3.5.2)
+  - ListKit (2.0.0)
   - RxCocoa (3.1.0):
     - RxSwift (~> 3.1)
   - RxSwift (3.1.0)
@@ -17,6 +18,7 @@ DEPENDENCIES:
   - DeviceKit (~> 1.0)
   - Eureka (~> 2.0.1)
   - Kingfisher
+  - ListKit
   - RxCocoa
   - RxSwift
   - SnapKit
@@ -29,12 +31,13 @@ SPEC CHECKSUMS:
   DeviceKit: 461e525867e48e725f41699c1cab3100df1258ff
   Eureka: ae837bb1dfae0c07bc1bda7aeef87876eeb537c2
   Kingfisher: 9950e382c500b6834ce004c7c4131c444e90c3a1
+  ListKit: 3cc52b46436812398207846bd08e91feaea85042
   RxCocoa: 50d7564866da9299161e86a263ce12a0873904d8
   RxSwift: 83ff553e7593fdfdcb2562933a64c0284dffdadc
   SnapKit: 12b24f569cb7c143acc9c22b9d91b23e7b1c84a2
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   SwiftyVIPER: 83afd74104ea27303ec6a52563f4adbf33413e50
 
-PODFILE CHECKSUM: cd027ab2109f17a4281d06010ead27f48c59e5c8
+PODFILE CHECKSUM: 599aac03773e67f2b214e51a672db9e4efdc0649
 
 COCOAPODS: 1.2.0
