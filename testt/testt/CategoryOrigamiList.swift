@@ -13,10 +13,9 @@ class CategoryOrigamiCell: UITableViewCell, ListKitCellProtocol {
 
     public override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         overlay = UIView()
-        overlay.backgroundColor = UIColor.white.withAlphaComponent(0.3)
+        overlay.backgroundColor = UIColor.black.withAlphaComponent(0.3)
 
         imgView = UIImageView()
-
         super.init(style: style, reuseIdentifier: reuseIdentifier)
 
         self.selectionStyle = .none
@@ -37,19 +36,23 @@ class CategoryOrigamiCell: UITableViewCell, ListKitCellProtocol {
             self.imgView.snp.makeConstraints { (make) in
                 make.size.equalToSuperview()
             }
-            
-            self.textLabel!.text = model?.name as String?
-            self.textLabel!.snp.makeConstraints { (make) in
-                make.width.equalToSuperview()
-                make.centerY.equalToSuperview()
-            }
 
             self.contentView.addSubview(overlay)
             self.overlay.snp.makeConstraints { (make) in
                 make.size.equalToSuperview()
             }
+
+            self.overlay.addSubview(self.textLabel!)
+            self.textLabel!.text = model?.name as String?
+            self.textLabel!.font = UIFont.systemFont(ofSize: 25)
+            self.textLabel!.textColor = .white
+            self.textLabel!.textAlignment = .center
+            self.textLabel!.snp.makeConstraints { (make) in
+                make.width.equalToSuperview()
+                make.centerY.equalToSuperview()
+            }
         }
-    }
+    } // fin model
 }
 
 class CategoryOrigamiList : UIViewController {
@@ -57,14 +60,25 @@ class CategoryOrigamiList : UIViewController {
     var dataSource : ArrayDataSource<CategoryOrigamiCell,OrigamiInfo>?
 
     override func viewDidLoad() {
+        let title = NSLocalizedString("title", comment: "")
+        self.title = title
+
        list = UITableView()
+        list.backgroundColor = .white
        list.delegate = self
        self.view.addSubview(list)
        list.snp.makeConstraints { (make) in
            make.size.equalToSuperview()
        }
 
-        let infos = [OrigamiInfo(name: "Test", imgName: "origami_time_bg")]
+        let infos = [OrigamiInfo(name:"Test", imgName:"origami_time_bg"),
+                     OrigamiInfo(name:"test2",imgName:"origami_time_bg"),
+                     OrigamiInfo(name:"test2",imgName:"origami_time_bg"),
+                     OrigamiInfo(name:"test2",imgName:"origami_time_bg"),
+                     OrigamiInfo(name:"test2",imgName:"origami_time_bg"),
+                     OrigamiInfo(name:"test2",imgName:"origami_time_bg"),
+                     OrigamiInfo(name:"test2",imgName:"origami_time_bg")
+        ]
         dataSource = ArrayDataSource(array:infos,cellType:CategoryOrigamiCell.self)
         self.list.dataSource = dataSource
     } // fin viewDidload
@@ -72,6 +86,18 @@ class CategoryOrigamiList : UIViewController {
 
 extension CategoryOrigamiList : UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 200
+        return 170
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let transition = CATransition()
+        transition.duration = 0.5
+        
+        transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        transition.type = kCATransitionReveal
+        self.navigationController?.view.layer.add(transition, forKey: nil)
+
+        let u = UIViewController()
+        self.navigationController?.pushViewController(u, animated: false)
     }
 }
