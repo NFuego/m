@@ -2,6 +2,10 @@ import ListKit
 import UIKit
 import SnapKit
 
+/*
+https://www.amazon.com/120-Writing-Summaries-Q91-120-Pack/dp/1499605625
+ */
+
 struct OrigamiInfo {
     let name:String
     let imgName:String
